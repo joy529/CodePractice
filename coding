@@ -1,0 +1,39 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+
+class animal{
+    private:
+        int age;
+        string gender;
+    public:
+        string color;
+    
+    void AgeGender(int age1, string gender1);
+    void infoAnimal(){
+        
+        cout<<"Age: "<< age << endl;
+        cout<<"Gender: "<< gender << endl;
+        cout<<"Color: "<< color << endl;
+    }
+};
+
+void animal :: AgeGender(int age1, string gender1){
+   age = age1;
+   gender = gender1;
+}
+
+int main(){
+
+    animal dog;
+    dog.AgeGender(7, "male");
+    dog.color = "white";
+    dog.infoAnimal();
+
+    animal lion;
+    lion.AgeGender(9, "female");
+    lion.color = "brown";
+    lion.infoAnimal();
+
+    return 0;
+}
