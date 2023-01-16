@@ -183,3 +183,65 @@ int main(){
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+class employee{
+		int id;
+		//static int count = 1000;// syntax error
+		static int count;
+
+		public:
+			void setData(void){
+				cout<< "Enter the id" << endl;
+				cin>>id;
+				count++;
+			}
+			void getData(void){
+				//cout<< id;
+				cout<< "The id of this employee is " << id << "and this is employee number" << count << endl;
+			}
+
+
+			static void getcount(void){				// static function
+				cout<< "The value of count is " << count << endl;
+			}
+	};
+
+	int employee :: count;	//default value is 0
+	//int employee :: count = 1000;
+
+	int main(){
+
+		employee harry, rohan, lovish;
+		//employee harry;
+		//harry.id = 1;
+		//harry.count = 1;//cannot do this as id and count are private
+		harry.setData();
+		harry.getData();
+		employee :: getcount();
+
+		rohan.setData();
+		rohan.getData();
+		employee :: getcount();
+
+		lovish.setData();
+		lovish.getData();
+		employee :: getcount();
+
+
+		return 0;
+	}
+    
+    
+    
+    
+    
