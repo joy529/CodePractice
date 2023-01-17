@@ -653,3 +653,66 @@ int main(){
 
     return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//code with harry - video 30
+
+class point{
+    int a;
+    int b;
+
+    public:
+        point(int x, int y){
+            a = x;
+            b = y;
+        } 
+
+        void displayPoint(void){
+            cout<< "Point is (" << a << "," << b << ")" << endl;
+        }
+
+        friend void distancebwtPoints(point , point );
+
+};
+
+
+void distancebwtPoints(point o1, point o2){
+                    int d;
+                    d = sqrt(pow((o2.a - o1.a),2) + pow((o2.b - o1.b),2));
+                    cout<<"distance between two points : " << d << endl;
+                }
+
+
+
+int main(){
+
+    point p(1,0);
+    point q(70,0);
+    
+    
+    // p1.setPoint(1,2);
+     p.displayPoint();
+    // p2.setPoint(3,4);
+     q.displayPoint();
+
+    distancebwtPoints(p,q);
+
+    
+
+    return 0;
+}
