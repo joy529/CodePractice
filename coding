@@ -451,7 +451,7 @@ int main(){
 
 
 
-
+//code tantra
 /* 
 #include <bits/stdc++.h>
 using namespace std;
@@ -490,7 +490,7 @@ int main(){
 
 
 
-
+//code tantra
 /* 
 #include <bits/stdc++.h>
 #include <vector>
@@ -541,4 +541,58 @@ int main(){
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+//code with harry video 28
+
+
+class Y;
+
+class X{
+    int data;
+        public:
+        void setValue(int value){
+            data = value;
+        }
+        friend void add(X , Y);
+};
+
+class Y{
+    int num;
+        public:
+        void setValue(int value){
+            num = value;
+        }
+        friend void add(X , Y);
+};
+
+
+void add(X o1, Y o2){
+    //cout<< "Sum is : " << o1.setValue(int value)+o2.setValue(int value) << endl;
+    cout<< "Sum is : " << o1.data + o2.num << endl;
+}
+
+
+
+int main(){
+
+    X a1;
+    a1.setValue(2);
+    Y b1;
+    b1.setValue(3);
+
+    add(a1, b1);
+
+    return 0;
+}
 
