@@ -596,3 +596,60 @@ int main(){
     return 0;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//call by reference variable;
+
+void swap(int &a, int &b){
+    int temp = a;
+    a = b;
+    b = temp;
+}
+
+
+int main(){
+
+    int x = 2;
+    int y = 4;
+
+    swap(x,y);
+    cout<<x;
+    cout<<y;
+
+    return 0; 
+}
+
+
+
+//call by reference pointer
+
+void swapPointer(int *a, int *b){
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+int main(){
+
+    int x = 3;
+    int y = 6;
+
+    swapPointer(&x, &y);
+    cout<<x << endl;
+    cout<< y;
+
+    return 0;
+}
