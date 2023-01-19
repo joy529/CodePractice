@@ -797,3 +797,59 @@ int main(){
 
     return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+//pointers @code with harry
+    class shop{
+        int id;
+        int price;
+        public:
+            void setData(int a, float b){
+                id = a;
+                price = b;
+            }
+            void getData(void){
+                cout<<"id no. = " << id << endl;
+                cout<<"price = " << price << endl;
+            }
+
+    };
+
+
+
+int main(){
+
+    
+
+    int p, i;
+    float q;
+    shop *ptr  =  new shop[3];
+    shop *ptrtemp = ptr;
+    for(i = 0; i<3; i++){
+        cout<< "Enter id and price of the item : " << i+1 << endl;
+        cin>>p>>q;
+        ptr->setData(p,q);
+        ptr++;
+    }
+    for(i = 0; i<3; i++){
+        cout<<"Item No. = " << i+1 << endl;
+        ptrtemp->getData();
+        ptrtemp++;
+    }
+
+
+    return 0;
+}
+
+
+
+
