@@ -716,3 +716,84 @@ int main(){
 
     return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+//Pointers - array in objects
+
+
+class Complex{
+    int real;
+    int imaginary;
+
+    public:
+        void setData(int a, int b){
+            real = a;
+            imaginary = b;
+        }
+
+        void getData(){
+            cout<< "real No. = " << real << endl;
+            cout<< "imaginary No. = " << imaginary << endl;
+        }
+
+};
+
+
+int main(){
+
+    // int A[5] = {1, 2, 3, 4, 5};
+    
+    // int *p = A;
+
+    // cout<< A << endl; 
+    // cout<<&A << endl;
+    // cout<<&A[0] << endl;
+
+
+    // Complex c1;
+    // c1.setData(1, 3);
+    // c1.getData();
+
+
+    //Complex c1;
+    //Complex *ptr = &c1;
+
+    //Complex *ptr = new Complex;
+
+    //three basic thing i have to keep in mind;
+    // * = dereference hojata he 
+    // & = address aajata he 
+    // new = new object or anything int, float, string ... 
+
+
+    // (*ptr).setData(9,8);
+    // (*ptr).getData();
+
+
+    // ptr->setData(6,7);
+    // ptr->getData(); 
+
+
+    // c1->setData(2,5);
+    // c1->getData();
+
+
+    //array of objects:
+
+    // Complex *ptr = new Complex[4];
+    // ptr->setData(8,4);
+    // ptr->getData();
+
+    
+
+    return 0;
+}
