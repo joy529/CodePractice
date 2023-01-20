@@ -969,3 +969,36 @@ map<string, int> marksMap;
 
 
 
+
+
+
+
+
+
+//hashing   - Apna college
+
+
+
+int main(){
+
+    
+    map<int,int> mp;
+
+    mp[3] = 1;
+
+    cout<< mp[3] << endl;
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
