@@ -1002,3 +1002,65 @@ int main(){
 
 
 
+
+
+
+
+
+
+
+//-----------------------------SET-----------------------------------
+
+
+
+
+
+
+
+int main(){
+
+    //elements are in sorted order
+
+    set<int> s;
+    s.insert(1);
+    s.insert(4);
+    s.insert(3);
+    s.insert(7);
+    s.insert(2);
+
+    //s.erase(s.begin());
+
+
+    //Lower bound means element having the same key or greater than that.
+    //Upper bound means greater than that key.
+    cout<< *s.upper_bound(1) << endl;
+    cout<< *s.lower_bound(1) << endl;
+    cout<< *s.lower_bound(2) << endl;
+
+    for(auto i : s){
+        cout<< i <<" ";
+    }
+
+
+
+/* 
+    for(auto i = s.begin(); i != s.end(); i++){
+        cout<< *i << " ";
+    }
+*/
+
+/* 
+    s.erase(s.end());
+
+    for(auto i : s){
+        cout<< i << " "; 
+    }
+ */
+
+    return 0;
+}
+
+
+
+
+
